@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Primitive scroll up for monolith projects.}
   spec.description   = %q{Primitive scroll up for monolith projects.}
   spec.homepage      = "https://github.com/sOM2H/my_scroll_up"
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
