@@ -11,7 +11,19 @@ gem 'jquery-rails'
 
 And then execute:
 
-    $ bundle
+    $ gem install my_scroll_up 
+    $ bundle install
+
+If you don't use bootsrap, then add to your head:
+
+```html
+...
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+...
+```
+
+
+Add this code to your body:
 
 `app/views/layouts/application.html.erb`
 
@@ -26,11 +38,21 @@ Erb:
   <i class="icon-chevron-up"></i>
 </a>
 ```
+Add requires to js and css:
+
 `app/assets/javascripts/application.js`
 
 ``` js
   ...
   //= require jquery
   //= require my_scroll_up
+  ...
+```
+
+`app/assets/stylesheets/application.css`
+
+```css
+  ...
+  *= require my_scroll_up
   ...
 ```
