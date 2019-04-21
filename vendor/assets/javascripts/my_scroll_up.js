@@ -1,7 +1,3 @@
-//= require jquery
-//= require jquery_ujs
-//= require jquery.remotipart
-
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#scroll-up').fadeIn(200);    // Fade in the arrow
