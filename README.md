@@ -1,5 +1,7 @@
 # MyScrollUp
-Primitive scroll up for monolith projects.
+Customizable scroll up for monolith projects.
+
+![Scroll UP](img/Screenshot.png)
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -13,8 +15,9 @@ And then execute:
 
     $ gem install my_scroll_up 
     $ bundle install
+    $ rails g my_scroll_up:install
 
-If you don't use bootsrap, then add to your head:
+If you don't use bootsrap, then add this line to your head:
 
 ```html
 ...
@@ -27,18 +30,14 @@ Add this code to your body:
 
 `app/views/layouts/application.html.erb`
 
-Haml:
-```haml
- %a#scroll-up{:href => "javascript:"}
-    %i.icon-chevron-up
-```
-Erb:
+
 ```erb
-<a id="scroll-up" href="javascript:">
-  <i class="icon-chevron-up"></i>
-</a>
+<head>
+  <title>My title</title>
+  <%= MyScrollUp.render.html_safe %>
+  ...
 ```
-Add requires to js and css:
+Add requirements to js and css:
 
 `app/assets/javascripts/application.js`
 
@@ -56,3 +55,20 @@ Add requires to js and css:
   *= require my_scroll_up
   ...
 ```
+## Usage:
+
+You can customize your icon style:
+(Default 'icon-chevron-up')
+
+`/app/config/initializers/my_scroll_up.rb`
+
+```ruby
+MyScrollUp.configure do |config|
+  # Set icon style example
+  # config.icon = 'icon-chevron-up'
+end
+```
+
+## License
+
+The MIT License
