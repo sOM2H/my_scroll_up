@@ -32,8 +32,7 @@ Add this code to your body:
 
 
 ```erb
-<head>
-  <title>My title</title>
+  ...
   <%= MyScrollUp.render.html_safe %>
   ...
 ```
