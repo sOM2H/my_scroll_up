@@ -17,7 +17,7 @@ And then execute:
     $ bundle install
     $ rails g my_scroll_up:install
 
-If you don't use bootsrap, then add this line to your head:
+If you don't use bootstrap, then add this line to your head:
 
 ```html
 ...
