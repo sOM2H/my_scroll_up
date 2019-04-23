@@ -1,7 +1,7 @@
 # MyScrollUp
 Customizable scroll up for monolith projects.
 
-![Scroll UP](img/Screenshot.png)
+![ScrollUp examples](img/example.png)
 ## Installation
 
 Add this line to your application's Gemfile:
