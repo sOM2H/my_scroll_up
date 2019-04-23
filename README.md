@@ -57,7 +57,11 @@ Add requirements to js and css:
 ## Usage:
 
 You can customize your icon style:
+
+You can choose an icon from https://fontawesome.com/v3.2.1/icons/
+
 (Default 'icon-chevron-up')
+
 
 `/app/config/initializers/my_scroll_up.rb`
 
