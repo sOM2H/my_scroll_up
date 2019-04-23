@@ -8,7 +8,7 @@ $(window).scroll(function() {
 
 $( document ).ready(function() {
   $( document.body ).click(function(e) {
-    if (e.target.id == "scroll-up" || e.target.className == "icon-chevron-up"){
+    if (e.target.id == "scroll-up" || e.target.parentNode.id == "scroll-up"){
       $('html, body').animate({scrollTop : 0}, 500);
       event.preventDefault();
     }
