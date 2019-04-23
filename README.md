@@ -3,7 +3,7 @@ Customizable scroll up for monolith projects.
 
 ![ScrollUp examples](img/example.png)
 
-Rreview: https://myscrollup.herokuapp.com/
+Preview: https://myscrollup.herokuapp.com/
 ## Installation
 
 Add this line to your application's Gemfile:
