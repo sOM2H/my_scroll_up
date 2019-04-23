@@ -2,18 +2,19 @@
 Customizable scroll up for monolith projects.
 
 ![ScrollUp examples](img/example.png)
+
+Rreview: https://myscrollup.herokuapp.com/
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'my_scroll_up'
 gem 'jquery-rails'
+gem 'my_scroll_up'
 ```
 
 And then execute:
 
-    $ gem install my_scroll_up 
     $ bundle install
     $ rails g my_scroll_up:install
 
