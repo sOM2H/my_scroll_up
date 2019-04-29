@@ -23,7 +23,7 @@ module MyScrollUp
 
   def self.render
     scroll = '<a id="scroll-up"><i'
-    if MyScrollUp.configuration.icon.nil?
+    if MyScrollUp.configuration.nil?
       scroll << ' class="icon-chevron-up">'
     else
       scroll << ' class="'
