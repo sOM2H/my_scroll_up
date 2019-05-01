@@ -1,4 +1,8 @@
 # MyScrollUp
+
+[(https://codeclimate.com/github/sOM2H/my_scroll_up.png)](https://codeclimate.com/github/sOM2H/my_scroll_up)
+
+
 Customizable scroll up for monolith projects.
 
 ![ScrollUp examples](img/example.png)
