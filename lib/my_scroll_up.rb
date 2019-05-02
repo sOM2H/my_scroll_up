@@ -1,5 +1,5 @@
 require 'my_scroll_up/version'
-require 'my_scroll_up/engine'
+#require 'my_scroll_up/engine'
 
 # Main module
 module MyScrollUp
@@ -22,15 +22,8 @@ module MyScrollUp
   end
 
   def self.render
-    scroll = '<a id="scroll-up"><i'
-    if MyScrollUp.configuration.nil?
-      scroll << ' class="icon-chevron-up">'
-    else
-      scroll << ' class="'
-      scroll << MyScrollUp.configuration.icon.to_s
-      scroll << '">'
-    end
-    scroll << '</i></a>'
+    cls = ((MyScrollUp.configuration.nil?)? 'icon-chevron-up' : MyScrollUp.configuration.icon)
+    scroll = '<a id="scroll-up"><i class="' + cls + '"></i></a>'
     scroll
   end
 end
