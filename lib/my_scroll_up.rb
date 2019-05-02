@@ -1,5 +1,5 @@
 require 'my_scroll_up/version'
-require 'my_scroll_up/engine'
+#require 'my_scroll_up/engine'
 
 # Main module
 module MyScrollUp
@@ -22,6 +22,6 @@ module MyScrollUp
   end
 
   def self.render
-    '<a id="scroll-up"><i class="' + MyScrollUp.configuration&.icon || 'icon-chevron-up' + '"></i></a>'
+    '<a id="scroll-up"><i class="' + (MyScrollUp.configuration&.icon || 'icon-chevron-up') + '"></i></a>'
   end
 end
