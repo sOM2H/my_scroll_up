@@ -1,5 +1,5 @@
 require 'my_scroll_up/version'
-#require 'my_scroll_up/engine'
+require 'my_scroll_up/engine'
 
 # Main module
 module MyScrollUp
