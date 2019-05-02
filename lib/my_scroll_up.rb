@@ -22,8 +22,6 @@ module MyScrollUp
   end
 
   def self.render
-    cls = (MyScrollUp.configuration.nil?) ? 'icon-chevron-up' : MyScrollUp.configuration.icon
-    scroll = '<a id="scroll-up"><i class="' + cls + '"></i></a>'
-    scroll
+    '<a id="scroll-up"><i class="' + MyScrollUp.configuration&.icon || 'icon-chevron-up' + '"></i></a>'
   end
 end
